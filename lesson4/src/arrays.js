@@ -20,9 +20,7 @@ const longWords = strings.filter(function (item) {
 console.log(longWords);
 
 console.log("find (починається на 'я'):");
-const found = strings.find(function (item) {
-    return item[0] === "я";
-});
+const found = strings.find((item) => item[0] === 'я});
 console.log(found);
 
 console.log("indexOf('вишня'):");
