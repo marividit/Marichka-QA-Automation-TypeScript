@@ -1,0 +1,9 @@
+Схема інтеграційного тестування
+Базовий URL: https://api.thecatapi.com/v1
+Авторизація: header x-api-key: [api-key]
+Звʼязки між модулями:
+
+images/search → отримуємо image_id
+Використовуємо image_id для votes (голосуємо за зображення)
+Використовуємо image_id для favourites (додаємо в улюблені)
+breeds → отримуємо breed_id і перевіряємо що зображення з images/search?breed_ids=... відповідають породі
