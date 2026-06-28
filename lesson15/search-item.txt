@@ -1,0 +1,22 @@
+Назва: Пошук існуючого товару через пошук
+Передумова: Відкрита головна сторінка https://rozetka.com.ua/
+
+1. Знаходимо поле пошуку:
+   CSS:   input.search-form__input
+   XPath: //input[contains(@class,'search-form__input')]
+   → Очищаємо поле та вводимо текст "Айн Ренд - Атлант розправив плечі комплект з трьох книг"
+
+2. Натискаємо кнопку пошуку:
+   CSS:   button[data-testid="search-suggest-submit"]
+   XPath: //button[@data-testid='search-suggest-submit']
+   → Клік
+
+3. Очікуємо появу карток товарів:
+   CSS:   div.goods-tile
+   XPath: //div[contains(@class,'goods-tile')]
+   → Перевіряємо, що кількість елементів > 0
+
+4. Перевіряємо, що назви товарів містять "комплект з трьох книг":
+   CSS: 
+   XPath: //a[contains(@title,'Атлант розправив плечі комплект з трьох книг')]
+   → Перший елемент має бути видимим

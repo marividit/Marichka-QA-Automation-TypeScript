@@ -1,0 +1,21 @@
+Назва: Додати перший товар із пошукової видачі до кошика
+Передумова: Виконано пошук "Айн Ренд - Атлант розправив плечі комплект з трьох книг", відображені результати
+
+1. Знаходимо першу кнопку "Купити":
+   CSS:   a svg > use[href*="icon-basket"]
+   XPath: //a[./svg/use[contains(@href, 'icon-basket')]]
+
+   → Клік
+
+2. Очікуємо нотифікейшн: Товар додано до кошика
+   → Елемент видимий
+
+3. Переходимо до кошика:
+   CSS:   button use[rzIconName="icon-header-basket"]
+   XPath: ///use[@rzIconName='icon-header-basket']
+   → Клік
+
+4. Перевіряємо наявність товару в кошику:
+   CSS:  span.cart-product__title
+   XPath: //span[contains(@class,'cart-product__title')]
+   → Кількість елементів = 1
