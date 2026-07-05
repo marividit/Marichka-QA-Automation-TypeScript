@@ -1,0 +1,18 @@
+Назва: Застосування фільтру ціни у каталозі смартфонів
+Передумова: Відкрита сторінка каталогу ""Художня література https://rozetka.com.ua/ua/hudojestvennaya-literatura/c4326593/
+
+1. Знаходимо поле "Ціна від":
+   CSS:   input[data-testid="filter_slider_min_input"]
+   XPath: //input[@data-testid='filter_slider_min_input']
+   → Очищаємо та вводимо "500"
+
+2. Знаходимо поле "Ціна до":
+   CSS:   input[data-testid="filter_slider_max_input"]
+   XPath: //input[@data-testid='filter_slider_max_input']
+   → Очищаємо та вводимо "2000"
+
+3. Очікуємо оновлення списку товарів:
+   → Список перезавантажився
+
+5. Перевіряємо, що ціни у межах діапазону:
+   → Всі значення між 500 та 2000
