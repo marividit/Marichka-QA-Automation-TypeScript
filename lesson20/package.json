@@ -1,0 +1,26 @@
+{
+  "name": "sauce-demo-bdd",
+  "version": "1.0.0",
+  "description": "BDD-тести (Gherkin + Cucumber.js + Playwright) для SauceDemo",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:tags": "cucumber-js --tags",
+    "test:report": "cucumber-js && npx open-cli reports/cucumber-report.html"
+  },
+  "keywords": ["bdd", "cucumber", "playwright", "gherkin"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^22.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "playwright": "^1.61.1"
+  }
+}
