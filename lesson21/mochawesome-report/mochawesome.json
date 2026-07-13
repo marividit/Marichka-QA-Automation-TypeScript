@@ -1,0 +1,209 @@
+{
+    "stats": {
+        "suites": 4,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "Mon Jul 13 2026 16:23:10 GMT+0300 (Eastern European Summer Time)",
+        "end": "Mon Jul 13 2026 16:23:15 GMT+0300 (Eastern European Summer Time)",
+        "duration": 10673,
+        "testsRegistered": 4,
+        "passPercent": 100,
+        "pendingPercent": 0,
+        "other": 0,
+        "hasOther": false,
+        "skipped": 0,
+        "hasSkipped": false
+    },
+    "results": [
+        {
+            "uuid": "",
+            "title": "",
+            "fullFile": "",
+            "file": "",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [],
+            "suites": [
+                {
+                    "uuid": "c7d664f2-db37-4af6-9bb0-f2c8630eeb4e",
+                    "title": "add-product-to-cart.spec.ts",
+                    "fullFile": "/Users/mariasvietlakova/Desktop/QA-AUTOMATION-TYPESCRIPT-3/lesson21/tests/add-product-to-cart.spec.ts",
+                    "file": "add-product-to-cart.spec.ts",
+                    "beforeHooks": [],
+                    "afterHooks": [],
+                    "tests": [
+                        {
+                            "parentTitle": "add-product-to-cart.spec.ts",
+                            "title": "Add specific products to cart",
+                            "fullTitle": "add-product-to-cart.spec.ts Add specific products to cart",
+                            "timedOut": false,
+                            "duration": 3961,
+                            "state": "passed",
+                            "speed": "slow",
+                            "pass": true,
+                            "fail": false,
+                            "pending": false,
+                            "context": "",
+                            "code": "//Step: Launch browser | Category: pw:api | Duration: 1018\n//Step: Fixture \"browser\" | Category: fixture | Duration: 1019\n//Step: Create context | Category: pw:api | Duration: 10\n//Step: Fixture \"context\" | Category: fixture | Duration: 14\n//Step: Create page | Category: pw:api | Duration: 595\n//Step: Fixture \"page\" | Category: fixture | Duration: 596\n//Step: Fixture \"basketPage\" | Category: fixture | Duration: 1\n//Step: Before Hooks | Category: hook | Duration: 1641\n//Step: Navigate to \"/\" | Category: pw:api | Duration: 331\n//Step: Fill \"standard_user\" locator('[data-test=\\'username\\']') | Category: pw:api | Duration: 85\n//Step: Fill \"secret_sauce\" locator('[data-test=\\'password\\']') | Category: pw:api | Duration: 89\n//Step: Click locator('[data-test=\\'login-button\\']') | Category: pw:api | Duration: 139\n//Step: Wait for load state \"load\" | Category: pw:api | Duration: 1\n//Step: Scroll into view locator('[data-test=\"item-5-title-link\"]') | Category: pw:api | Duration: 69\n//Step: Wait for timeout | Category: pw:api | Duration: 301\n//Step: Wait for selector locator('[data-test=\"item-5-title-link\"]').locator('xpath=ancestor::*[@data-test=\"inventory-item\"]').locator('[data-test*=\"add-to-cart\"]') | Category: pw:api | Duration: 7\n//Step: Click locator('[data-test=\"item-5-title-link\"]').locator('xpath=ancestor::*[@data-test=\"inventory-item\"]').locator('[data-test*=\"add-to-cart\"]') | Category: pw:api | Duration: 16\n//Step: Wait for timeout | Category: pw:api | Duration: 503\n//Step: Scroll into view locator('[data-test=\"item-4-title-link\"]') | Category: pw:api | Duration: 27\n//Step: Wait for timeout | Category: pw:api | Duration: 302\n//Step: Wait for selector locator('[data-test=\"item-4-title-link\"]').locator('xpath=ancestor::*[@data-test=\"inventory-item\"]').locator('[data-test*=\"add-to-cart\"]') | Category: pw:api | Duration: 2\n//Step: Click locator('[data-test=\"item-4-title-link\"]').locator('xpath=ancestor::*[@data-test=\"inventory-item\"]').locator('[data-test*=\"add-to-cart\"]') | Category: pw:api | Duration: 30\n//Step: Wait for timeout | Category: pw:api | Duration: 500\n//Step: Scroll into view locator('[data-test=\"item-0-title-link\"]') | Category: pw:api | Duration: 13\n//Step: Wait for timeout | Category: pw:api | Duration: 302\n//Step: Wait for selector locator('[data-test=\"item-0-title-link\"]').locator('xpath=ancestor::*[@data-test=\"inventory-item\"]').locator('[data-test*=\"add-to-cart\"]') | Category: pw:api | Duration: 5\n//Step: Click locator('[data-test=\"item-0-title-link\"]').locator('xpath=ancestor::*[@data-test=\"inventory-item\"]').locator('[data-test*=\"add-to-cart\"]') | Category: pw:api | Duration: 31\n//Step: Wait for timeout | Category: pw:api | Duration: 501\n//Step: Expect \"toBeVisible\" locator('[data-test=\"shopping-cart-badge\"]') | Category: expect | Duration: 6\n//Step: Fixture \"basketPage\" | Category: fixture | Duration: 0\n//Step: Fixture \"page\" | Category: fixture | Duration: 0\n//Step: Close context | Category: pw:api | Duration: 12\n//Step: Fixture \"context\" | Category: fixture | Duration: 16\n//Step: After Hooks | Category: hook | Duration: 22",
+                            "err": {},
+                            "uuid": "4cc3a304-6c44-47fd-87c3-2666256db403",
+                            "isHook": false,
+                            "skipped": false
+                        }
+                    ],
+                    "suites": [],
+                    "passes": [
+                        "4cc3a304-6c44-47fd-87c3-2666256db403"
+                    ],
+                    "failures": [],
+                    "pending": [],
+                    "skipped": [],
+                    "duration": 3961,
+                    "root": false,
+                    "rootEmpty": false,
+                    "_timeout": 0
+                },
+                {
+                    "uuid": "1fe4ad9b-83b5-4b4b-b6ee-028d3d4222bb",
+                    "title": "checkout.spec.ts",
+                    "fullFile": "/Users/mariasvietlakova/Desktop/QA-AUTOMATION-TYPESCRIPT-3/lesson21/tests/checkout.spec.ts",
+                    "file": "checkout.spec.ts",
+                    "beforeHooks": [],
+                    "afterHooks": [],
+                    "tests": [
+                        {
+                            "parentTitle": "checkout.spec.ts",
+                            "title": "Checkout with dynamic date in last name",
+                            "fullTitle": "checkout.spec.ts Checkout with dynamic date in last name",
+                            "timedOut": false,
+                            "duration": 2497,
+                            "state": "passed",
+                            "speed": "slow",
+                            "pass": true,
+                            "fail": false,
+                            "pending": false,
+                            "context": "",
+                            "code": "//Step: Launch browser | Category: pw:api | Duration: 1020\n//Step: Fixture \"browser\" | Category: fixture | Duration: 1022\n//Step: Create context | Category: pw:api | Duration: 10\n//Step: Fixture \"context\" | Category: fixture | Duration: 13\n//Step: Create page | Category: pw:api | Duration: 589\n//Step: Fixture \"page\" | Category: fixture | Duration: 591\n//Step: Fixture \"basketPage\" | Category: fixture | Duration: 0\n//Step: Before Hooks | Category: hook | Duration: 1642\n//Step: Navigate to \"/\" | Category: pw:api | Duration: 335\n//Step: Fill \"standard_user\" locator('[data-test=\\'username\\']') | Category: pw:api | Duration: 84\n//Step: Fill \"secret_sauce\" locator('[data-test=\\'password\\']') | Category: pw:api | Duration: 91\n//Step: Click locator('[data-test=\\'login-button\\']') | Category: pw:api | Duration: 135\n//Step: Wait for load state \"load\" | Category: pw:api | Duration: 1\n//Step: Scroll into view locator('[data-test=\"item-4-title-link\"]') | Category: pw:api | Duration: 70\n//Step: Wait for timeout | Category: pw:api | Duration: 302\n//Step: Wait for selector locator('[data-test=\"item-4-title-link\"]').locator('xpath=ancestor::*[@data-test=\"inventory-item\"]').locator('[data-test*=\"add-to-cart\"]') | Category: pw:api | Duration: 4\n//Step: Click locator('[data-test=\"item-4-title-link\"]').locator('xpath=ancestor::*[@data-test=\"inventory-item\"]').locator('[data-test*=\"add-to-cart\"]') | Category: pw:api | Duration: 16\n//Step: Wait for timeout | Category: pw:api | Duration: 502\n//Step: Click locator('[data-test=\"shopping-cart-link\"]') | Category: pw:api | Duration: 92\n//Step: Wait for load state \"load\" | Category: pw:api | Duration: 0\n//Step: Click locator('[data-test=\"checkout\"]') | Category: pw:api | Duration: 59\n//Step: Wait for load state \"load\" | Category: pw:api | Duration: 0\n//Step: Fill \"automation\" locator('[data-test=\"firstName\"]') | Category: pw:api | Duration: 9\n//Step: Fill \"07_13_2026\" locator('[data-test=\"lastName\"]') | Category: pw:api | Duration: 7\n//Step: Fill \"12345\" locator('[data-test=\"postalCode\"]') | Category: pw:api | Duration: 9\n//Step: Click locator('[data-test=\"continue\"]') | Category: pw:api | Duration: 73\n//Step: Wait for load state \"load\" | Category: pw:api | Duration: 0\n//Step: Click locator('[data-test=\"finish\"]') | Category: pw:api | Duration: 45\n//Step: Wait for load state \"load\" | Category: pw:api | Duration: 0\n//Step: Expect \"toBeVisible\" locator('[data-test=\"complete-header\"]') | Category: expect | Duration: 2\n//Step: Fixture \"basketPage\" | Category: fixture | Duration: 0\n//Step: Fixture \"page\" | Category: fixture | Duration: 0\n//Step: Close context | Category: pw:api | Duration: 4\n//Step: Fixture \"context\" | Category: fixture | Duration: 6\n//Step: After Hooks | Category: hook | Duration: 8",
+                            "err": {},
+                            "uuid": "8641dc86-2e6b-4e63-b8a1-01b9100e5c15",
+                            "isHook": false,
+                            "skipped": false
+                        }
+                    ],
+                    "suites": [],
+                    "passes": [
+                        "8641dc86-2e6b-4e63-b8a1-01b9100e5c15"
+                    ],
+                    "failures": [],
+                    "pending": [],
+                    "skipped": [],
+                    "duration": 2497,
+                    "root": false,
+                    "rootEmpty": false,
+                    "_timeout": 0
+                },
+                {
+                    "uuid": "9112d24d-f77a-4cc9-8944-b2336a59b7cd",
+                    "title": "delete-product.spec.ts",
+                    "fullFile": "/Users/mariasvietlakova/Desktop/QA-AUTOMATION-TYPESCRIPT-3/lesson21/tests/delete-product.spec.ts",
+                    "file": "delete-product.spec.ts",
+                    "beforeHooks": [],
+                    "afterHooks": [],
+                    "tests": [
+                        {
+                            "parentTitle": "delete-product.spec.ts",
+                            "title": "Delete product from basket",
+                            "fullTitle": "delete-product.spec.ts Delete product from basket",
+                            "timedOut": false,
+                            "duration": 2937,
+                            "state": "passed",
+                            "speed": "slow",
+                            "pass": true,
+                            "fail": false,
+                            "pending": false,
+                            "context": "",
+                            "code": "//Step: Launch browser | Category: pw:api | Duration: 1005\n//Step: Fixture \"browser\" | Category: fixture | Duration: 1007\n//Step: Create context | Category: pw:api | Duration: 19\n//Step: Fixture \"context\" | Category: fixture | Duration: 22\n//Step: Create page | Category: pw:api | Duration: 598\n//Step: Fixture \"page\" | Category: fixture | Duration: 598\n//Step: Fixture \"basketPage\" | Category: fixture | Duration: 1\n//Step: Before Hooks | Category: hook | Duration: 1644\n//Step: Navigate to \"/\" | Category: pw:api | Duration: 476\n//Step: Fill \"standard_user\" locator('[data-test=\\'username\\']') | Category: pw:api | Duration: 95\n//Step: Fill \"secret_sauce\" locator('[data-test=\\'password\\']') | Category: pw:api | Duration: 43\n//Step: Click locator('[data-test=\\'login-button\\']') | Category: pw:api | Duration: 148\n//Step: Wait for load state \"load\" | Category: pw:api | Duration: 0\n//Step: Scroll into view locator('[data-test=\"item-4-title-link\"]') | Category: pw:api | Duration: 25\n//Step: Wait for timeout | Category: pw:api | Duration: 302\n//Step: Wait for selector locator('[data-test=\"item-4-title-link\"]').locator('xpath=ancestor::*[@data-test=\"inventory-item\"]').locator('[data-test*=\"add-to-cart\"]') | Category: pw:api | Duration: 4\n//Step: Click locator('[data-test=\"item-4-title-link\"]').locator('xpath=ancestor::*[@data-test=\"inventory-item\"]').locator('[data-test*=\"add-to-cart\"]') | Category: pw:api | Duration: 28\n//Step: Wait for timeout | Category: pw:api | Duration: 502\n//Step: Click locator('[data-test=\"shopping-cart-link\"]') | Category: pw:api | Duration: 74\n//Step: Wait for load state \"load\" | Category: pw:api | Duration: 0\n//Step: Wait for selector locator('[data-test*=\"remove-sauce-labs-backpack\"]') | Category: pw:api | Duration: 1\n//Step: Click locator('[data-test*=\"remove-sauce-labs-backpack\"]') | Category: pw:api | Duration: 13\n//Step: Wait for timeout | Category: pw:api | Duration: 512\n//Step: Query count locator('[data-test=\"cart-list\"] [data-test=\"inventory-item\"]') | Category: pw:api | Duration: 2\n//Step: Query count locator('[data-test=\"cart-list\"] [data-test=\"inventory-item\"]') | Category: pw:api | Duration: 1\n//Step: Fixture \"basketPage\" | Category: fixture | Duration: 0\n//Step: Fixture \"page\" | Category: fixture | Duration: 0\n//Step: Close context | Category: pw:api | Duration: 21\n//Step: Fixture \"context\" | Category: fixture | Duration: 24\n//Step: After Hooks | Category: hook | Duration: 31",
+                            "err": {},
+                            "uuid": "3227bbf2-149c-454f-8517-9dfcc37d69a4",
+                            "isHook": false,
+                            "skipped": false
+                        }
+                    ],
+                    "suites": [],
+                    "passes": [
+                        "3227bbf2-149c-454f-8517-9dfcc37d69a4"
+                    ],
+                    "failures": [],
+                    "pending": [],
+                    "skipped": [],
+                    "duration": 2937,
+                    "root": false,
+                    "rootEmpty": false,
+                    "_timeout": 0
+                },
+                {
+                    "uuid": "4802cd8f-2104-40e6-938f-9b6ab603f4a9",
+                    "title": "login-as-standart-user.spec.ts",
+                    "fullFile": "/Users/mariasvietlakova/Desktop/QA-AUTOMATION-TYPESCRIPT-3/lesson21/tests/login-as-standart-user.spec.ts",
+                    "file": "login-as-standart-user.spec.ts",
+                    "beforeHooks": [],
+                    "afterHooks": [],
+                    "tests": [
+                        {
+                            "parentTitle": "login-as-standart-user.spec.ts",
+                            "title": "Login as standard user",
+                            "fullTitle": "login-as-standart-user.spec.ts Login as standard user",
+                            "timedOut": false,
+                            "duration": 1278,
+                            "state": "passed",
+                            "speed": "slow",
+                            "pass": true,
+                            "fail": false,
+                            "pending": false,
+                            "context": "",
+                            "code": "//Step: Launch browser | Category: pw:api | Duration: 996\n//Step: Fixture \"browser\" | Category: fixture | Duration: 997\n//Step: Create context | Category: pw:api | Duration: 18\n//Step: Fixture \"context\" | Category: fixture | Duration: 23\n//Step: Create page | Category: pw:api | Duration: 598\n//Step: Fixture \"page\" | Category: fixture | Duration: 599\n//Step: Fixture \"basketPage\" | Category: fixture | Duration: 0\n//Step: Before Hooks | Category: hook | Duration: 1627\n//Step: Navigate to \"/\" | Category: pw:api | Duration: 372\n//Step: Fill \"standard_user\" locator('[data-test=\\'username\\']') | Category: pw:api | Duration: 87\n//Step: Fill \"secret_sauce\" locator('[data-test=\\'password\\']') | Category: pw:api | Duration: 6\n//Step: Click locator('[data-test=\\'login-button\\']') | Category: pw:api | Duration: 141\n//Step: Wait for load state \"load\" | Category: pw:api | Duration: 0\n//Step: Expect \"toHaveURL\" | Category: expect | Duration: 3\n//Step: Expect \"toBeVisible\" locator('.inventory_list') | Category: expect | Duration: 3\n//Step: Fixture \"basketPage\" | Category: fixture | Duration: 1\n//Step: Fixture \"page\" | Category: fixture | Duration: 0\n//Step: Close context | Category: pw:api | Duration: 16\n//Step: Fixture \"context\" | Category: fixture | Duration: 19\n//Step: After Hooks | Category: hook | Duration: 39",
+                            "err": {},
+                            "uuid": "fede75e6-738e-44c1-af99-1dc8a20071e5",
+                            "isHook": false,
+                            "skipped": false
+                        }
+                    ],
+                    "suites": [],
+                    "passes": [
+                        "fede75e6-738e-44c1-af99-1dc8a20071e5"
+                    ],
+                    "failures": [],
+                    "pending": [],
+                    "skipped": [],
+                    "duration": 1278,
+                    "root": false,
+                    "rootEmpty": false,
+                    "_timeout": 0
+                }
+            ],
+            "passes": [],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": true,
+            "rootEmpty": true,
+            "_timeout": 0
+        }
+    ],
+    "meta": {
+        "mochawesome": {
+            "options": {},
+            "version": "7.1.3"
+        },
+        "marge": {
+            "options": {},
+            "version": "6.2.0"
+        },
+        "mocha": {
+            "version": "7.1.3"
+        }
+    }
+}
