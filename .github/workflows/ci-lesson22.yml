@@ -19,9 +19,9 @@ jobs:
     timeout-minutes: 30
 
     env:
-      BASE_URL: ${{ secrets.BASE_URL }}
-      LOGIN: ${{ secrets.LOGIN }}
-      PASSWORD: ${{ secrets.PASSWORD }}
+      BASE_URL: ${{ secrets.BASE_URL || vars.BASE_URL }}
+      LOGIN: ${{ secrets.LOGIN || vars.LOGIN }}
+      PASSWORD: ${{ secrets.PASSWORD || vars.PASSWORD }}
 
     defaults:
       run:
@@ -34,7 +34,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
           cache-dependency-path: lesson22/package-lock.json
 
@@ -43,6 +43,19 @@ jobs:
 
       - name: Install Playwright browser
         run: npx playwright install --with-deps chromium
+
+      - name: Validate required environment variables
+        run: |
+          missing=0
+          for v in BASE_URL LOGIN PASSWORD; do
+            if [ -z "${!v}" ]; then
+              echo "Missing required value: $v (set either a Repository Secret or Variable)."
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
 
       - name: Run test suite
         run: npm test
