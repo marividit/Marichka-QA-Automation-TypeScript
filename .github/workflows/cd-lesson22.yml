@@ -1,0 +1,82 @@
+name: CD Lesson22
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'lesson22/**'
+      - '.github/workflows/cd-lesson22.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-lesson22
+  cancel-in-progress: true
+
+jobs:
+  deploy-report:
+    name: Deploy Playwright Report (lesson22)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    env:
+      BASE_URL: ${{ secrets.BASE_URL || vars.BASE_URL }}
+      LOGIN: ${{ secrets.LOGIN || vars.LOGIN }}
+      PASSWORD: ${{ secrets.PASSWORD || vars.PASSWORD }}
+
+    defaults:
+      run:
+        working-directory: lesson22
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: lesson22/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Validate required environment variables
+        run: |
+          missing=0
+          for v in BASE_URL LOGIN PASSWORD; do
+            if [ -z "${!v}" ]; then
+              echo "Missing required value: $v (set either a Repository Secret or Variable)."
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
+
+      - name: Run test suite
+        run: npm test
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: lesson22/playwright-report
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
