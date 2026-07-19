@@ -1,0 +1,71 @@
+{
+    "stats": {
+        "suites": 4,
+        "tests": 3,
+        "passes": 0,
+        "pending": 0,
+        "failures": 0,
+        "start": "Sun Jul 19 2026 13:13:08 GMT+0300 (Eastern European Summer Time)",
+        "end": "Sun Jul 19 2026 13:13:08 GMT+0300 (Eastern European Summer Time)",
+        "duration": 0,
+        "testsRegistered": 3,
+        "passPercent": 0,
+        "pendingPercent": 0,
+        "other": 0,
+        "hasOther": false,
+        "skipped": 0,
+        "hasSkipped": false
+    },
+    "results": [
+        {
+            "uuid": "",
+            "title": "",
+            "fullFile": "",
+            "file": "",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [],
+            "suites": [
+                {
+                    "uuid": "72e8722e-599e-4c53-a1cc-cdfc3d5f2615",
+                    "title": "Expense Tracker App",
+                    "fullFile": "/Users/mariasvietlakova/Desktop/QA-AUTOMATION-TYPESCRIPT-3/lesson23/tests/expense-tracker.spec.ts",
+                    "file": "expense-tracker.spec.ts",
+                    "beforeHooks": [],
+                    "afterHooks": [],
+                    "tests": [],
+                    "suites": [],
+                    "passes": [],
+                    "failures": [],
+                    "pending": [],
+                    "skipped": [],
+                    "duration": 0,
+                    "root": false,
+                    "rootEmpty": false,
+                    "_timeout": 0
+                }
+            ],
+            "passes": [],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": true,
+            "rootEmpty": true,
+            "_timeout": 0
+        }
+    ],
+    "meta": {
+        "mochawesome": {
+            "options": {},
+            "version": "7.1.3"
+        },
+        "marge": {
+            "options": {},
+            "version": "6.2.0"
+        },
+        "mocha": {
+            "version": "7.1.3"
+        }
+    }
+}
